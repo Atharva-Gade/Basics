@@ -1,11 +1,11 @@
 
 print("Welcome to the Calculator! \n Select a function to continue: \n " 
 "1. Addition \n" \
-"2. Subtraction \n" \
-"3. Multiplication \n" \
-"4. Division \n" \
-"5. Square \n" \
-"6. Cube \n")
+" 2. Subtraction \n" \
+" 3. Multiplication \n" \
+" 4. Division \n" \
+" 5. Square \n" \
+" 6. Cube \n")
 
 funct = int(input("Enter a number to continue: "))
 
@@ -44,5 +44,4 @@ if funct == 6:
     print("The cube is =", cube)
 
 print("Thank you for using our Calculator!")
-
 
