@@ -45,3 +45,4 @@ if funct == 6:
 
 print("Thank you for using our Calculator!")
 
+print("Hello")
