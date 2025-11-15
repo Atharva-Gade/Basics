@@ -1,63 +1,85 @@
 
 import math
 
-print("Welcome to the Calculator 🧮 ! \nSelect a function to continue: \n" 
-" ---------------------------------- \n" \
-" 1. Addition \n" \
-" 2. Subtraction \n" \
-" 3. Multiplication \n" \
-" 4. Division \n" \
-" 5. Square \n" \
-" 6. Cube \n" 
-" 7. Square Root \n" \
-" 8. Cube Root \n"
-"----------------------------------")
+def run_calc ():
 
-funct = int(input("Enter a number to continue: "))
+    print("Welcome to the Calculator 🧮 ! \nSelect a function to continue: \n" 
+    " ---------------------------------- \n" \
+    " 1. Addition \n" \
+    " 2. Subtraction \n" \
+    " 3. Multiplication \n" \
+    " 4. Division \n" \
+    " 5. Square \n" \
+    " 6. Cube \n" 
+    " 7. Square Root \n" \
+    " 8. Cube Root \n"
+    "----------------------------------")
 
-if funct == 1:
-    num1 = int(input("First Number: "))
-    num2 = int(input("Second Number: "))
-    num3 = num1 + num2
-    print(f"The sum is = {num3}")
+    funct = int(input("Enter a number to continue: "))
 
-if funct == 2:
-    num1 = int(input("First Number: "))
-    num2 = int(input("Second Number: "))
-    num3 = num1 - num2
-    print(f"The difference is = {num3}")
+    if funct == 1:
+        num1 = int(input("First Number: "))
+        num2 = int(input("Second Number: "))
+        num3 = num1 + num2
+        print(f"The sum is = {num3}")
+        print("Thank you for using our Calculator!")
 
-if funct == 3:
-    num1 = int(input("First Number: "))
-    num2 = int(input("Second Number: "))
-    num3 = num1 * num2
-    print(f"The product is = {num3}")
+    elif funct == 2:
+        num1 = int(input("First Number: "))
+        num2 = int(input("Second Number: "))
+        num3 = num1 - num2
+        print(f"The difference is = {num3}")
+        print("Thank you for using our Calculator!")
 
-if funct == 4:
-    num1 = int(input("First Number: "))
-    num2 = int(input("Second Number: "))
-    num3 = num1 / num2
-    print(f"The quotient is = {num3}")
+    elif funct == 3:
+        num1 = int(input("First Number: "))
+        num2 = int(input("Second Number: "))
+        num3 = num1 * num2
+        print(f"The product is = {num3}")
+        print("Thank you for using our Calculator!")
 
-if funct == 5:
-    num = int(input("Enter the Number: "))
-    square = num * num
-    print(f"The square is = {square}")
+    elif funct == 4:
+        num1 = int(input("First Number: "))
+        num2 = int(input("Second Number: "))
+        num3 = num1 / num2
+        print(f"The quotient is = {num3}")
+        print("Thank you for using our Calculator!")
 
-if funct == 6:
-    num = int(input("Enter the Number: "))
-    cube = num * num * num
-    print(f"The cube is = {cube}")
+    elif funct == 5:
+        num = int(input("Enter the Number: "))
+        square = num * num
+        print(f"The square is = {square}")
+        print("Thank you for using our Calculator!")
 
-if funct == 7:
-    num = int(input("Enter the Number: "))
-    sqroot = math.sqrt((num))
-    print(f"The Square Root of the Number is: {sqroot}")
+    elif funct == 6:
+        num = int(input("Enter the Number: "))
+        cube = num * num * num
+        print(f"The cube is = {cube}")
+        print("Thank you for using our Calculator!")
 
-if funct == 8:
-    num = int(input("Enter the Number: "))
-    cbroot = math.cbrt(num)
-    print(f"The Cube Root of the Number is: {cbroot}")
+    elif funct == 7:
+        num = int(input("Enter the Number: "))
+        sqroot = math.sqrt((num))
+        print(f"The Square Root of the Number is: {sqroot}")
+        print("Thank you for using our Calculator!")
 
-print("Thank you for using our Calculator!")
+    elif funct == 8:
+        num = int(input("Enter the Number: "))
+        cbroot = math.cbrt(num)
+        print(f"The Cube Root of the Number is: {cbroot}")
+        print("Thank you for using our Calculator!")
+
+    else:
+        print("Invalid Input entered. Please try again!")
+
+while True:
+    run_calc()
+    restart = input("Restart the Calculator? (y/n)")
+    
+    if restart == "n":
+        print("Thank you for using The Calculator.")
+        break
+
+    if restart == "y":
+        run_calc()
 
