@@ -1,11 +1,12 @@
 
-print("Welcome to the Calculator! \n Select a function to continue: \n" 
+print("Welcome to the Calculator 🧮 ! \nSelect a function to continue: \n" 
+" ---------------------------------- \n" \
 " 1. Addition \n" \
 " 2. Subtraction \n" \
 " 3. Multiplication \n" \
 " 4. Division \n" \
 " 5. Square \n" \
-" 6. Cube \n")
+" 6. Cube \n ----------------------------------")
 
 funct = int(input("Enter a number to continue: "))
 
