@@ -71,6 +71,7 @@ def run_calc ():
 
     else:
         print("Invalid Input entered. Please try again!")
+        run_calc()
 
 while True:
     run_calc()
@@ -82,3 +83,4 @@ while True:
 
     if restart == "y":
         run_calc()
+
