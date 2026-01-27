@@ -21,45 +21,45 @@ def run_calc ():
         num1 = int(input("First Number:\n"))
         num2 = int(input("Second Number:\n"))
         num3 = num1 + num2
-        print(f"The sum is = {num3}")
+        print(f"The Sum is = {num3}")
 
     elif funct == 2:
         num1 = int(input("First Number:\n"))
         num2 = int(input("Second Number:\n"))
         num3 = num1 - num2
-        print(f"The difference is = {num3}")
+        print(f"The Difference is = {num3}")
 
     elif funct == 3:
         num1 = int(input("First Number:\n"))
         num2 = int(input("Second Number:\n"))
         num3 = num1 * num2
-        print(f"The product is = {num3}")
+        print(f"The Product is = {num3}")
 
     elif funct == 4:
         num1 = int(input("First Number:\n"))
         num2 = int(input("Second Number:\n"))
         num3 = num1 / num2
-        print(f"The quotient is = {num3}")
+        print(f"The Quotient is = {num3}")
 
     elif funct == 5:
         num = int(input("Enter the Number:\n"))
         square = num * num
-        print(f"The square is = {square}")
+        print(f"The Square of the number is = {square}")
 
     elif funct == 6:
         num = int(input("Enter the Number:\n"))
         cube = num * num * num
-        print(f"The cube is = {cube}")
+        print(f"The Cube of the number is = {cube}")
 
     elif funct == 7:
         num = int(input("Enter the Number:\n"))
         sqroot = math.sqrt((num))
-        print(f"The Square Root of the Number is: {sqroot}")
+        print(f"The Square Root of the number is: {sqroot}")
 
     elif funct == 8:
         num = int(input("Enter the Number:\n"))
         cbroot = math.cbrt(num)
-        print(f"The Cube Root of the Number is: {cbroot}")
+        print(f"The Cube Root of the number is: {cbroot}")
 
     else:
         print("Invalid Input entered. Please try again!")
@@ -75,5 +75,6 @@ while True:
 
     if restart == "y":
         run_calc()
+
 
 
