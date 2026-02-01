@@ -12,7 +12,8 @@ def run_calc ():
     " 5. Square \n" \
     " 6. Cube \n" 
     " 7. Square Root \n" \
-    " 8. Cube Root \n"
+    " 8. Cube Root \n" \
+    " 9. Factorial \n"
     "----------------------------------")
 
     funct = int(input("Enter a number to continue:\n"))
@@ -60,6 +61,11 @@ def run_calc ():
         num = int(input("Enter the Number:\n"))
         cbroot = math.cbrt(num)
         print(f"The Cube Root of the number is: {cbroot}")
+        
+    elif funct == 9:
+        num = int(input("Enter the Number:\n"))
+        fact = math.factorial(num)
+        print(f"The Factorial of the number is: {fact}")
 
     else:
         print("Invalid Input entered. Please try again!")
